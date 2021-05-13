@@ -2,8 +2,8 @@
   "name": "blank",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --env target=all --mode=production",
-    "start": "webpack serve --env target=dev --mode=development",
+    "build": "./node_modules/.bin/webpack --env target=all --mode=production",
+    "start": "./node_modules/.bin/webpack serve --env target=dev --mode=development",
     "test": "jest",
     "train": "node_modules/.bin/ts-node src/nlu/train-model.ts"
   },
